@@ -19,8 +19,8 @@
       });
 
       console.group('Example 1: Measure text');
-      console.log('measure for "nyan":', measures[0]);
-      console.log('measure for "oh hai mark":', measures[1]);
+      console.log(`measure for 'nyan'`, measures[0]);
+      console.log(`measure for 'oh hai mark'`, measures[1]);
       console.groupEnd();
     </script>
 
@@ -29,8 +29,8 @@
       import { layoutText } from 'https://cdn.skypack.dev/@josephuspaye/svg-text';
 
       const lines = layoutText(
-        "The tired teacher told Tom to take thirty-three tables to the townhall. Despite drowsiness, Dorothy dove deep down the dark and dank drain to dig out Dave's damaged diary.",
-        { maxWidth: 100, maxLines: 2 },
+        'The tired teacher told Tom to take thirty-three tables to the townhall.',
+        { maxWidth: 300, maxLines: 2 },
         {
           fontFamily: 'Helvetica, Arial, sans-serif',
           fontWeight: 'bold',
