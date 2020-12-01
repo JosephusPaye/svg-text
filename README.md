@@ -41,6 +41,8 @@ measure for 'oh hai mark': { width: 180.21875, height: 35.21875 }
 
 ### Wrap text
 
+The following example shows how to layout text into wrapped lines (runs in the browser):
+
 ```js
 import { layoutText } from '@josephuspaye/svg-text';
 
