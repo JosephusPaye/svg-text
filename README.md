@@ -41,6 +41,9 @@ const lines = layoutText(
     fontFamily: 'Helvetica, Arial, sans-serif',
     fontWeight: 'bold',
     fontSize: '2em',
+  },
+  {
+    lineSpacing: 8,
   }
 );
 
@@ -71,15 +74,6 @@ interface LineGroup {
   height: number;
   lines: MeasuredLine[];
 }
-
-/**
- * Create markup for the given element, children, and attributes
- */
-function createElement(
-  element: keyof SVGElementTagNameMap,
-  children: string,
-  attrs: ElementAttrs
-): string;
 
 /**
  * Measure the given array of texts by converting them to SVG
