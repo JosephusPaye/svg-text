@@ -1,6 +1,6 @@
 {
   "name": "@josephuspaye/svg-text",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Measure and wrap text into lines for SVG in the browser",
   "main": "dist/svg-text.js",
   "repository": "https://github.com/JosephusPaye/svg-text.git",
