@@ -48,7 +48,7 @@ function camelToSnake(str: string, delimiter = '-') {
 /**
  * Create markup for the given element, children, and attributes
  */
-export function createElement(
+function createElement(
   element: keyof SVGElementTagNameMap,
   children: string,
   attrs: ElementAttrs
