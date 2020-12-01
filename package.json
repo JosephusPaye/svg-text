@@ -1,0 +1,31 @@
+{
+  "name": "@josephuspaye/svg-text",
+  "version": "0.0.0",
+  "description": "Measure and wrap text into lines for SVG in the browser",
+  "main": "dist/svg-text.js",
+  "repository": "https://github.com/JosephusPaye/svg-text.git",
+  "author": "Josephus Paye II",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"*.{js,json,md}\"",
+    "format:check": "prettier --list-different \"src/**/*.ts\" \"*.{js,json,md}\"",
+    "test": "echo na"
+  },
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true
+  }
+}

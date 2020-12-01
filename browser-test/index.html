@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@josephuspaye/svg-text browser test</title>
+  </head>
+  <body>
+    See the console for output.
+
+    <!-- Example 1: Measure text -->
+    <script type="module">
+      import { measureText } from 'https://unpkg.com/@josephuspaye/svg-text';
+
+      const measures = measureText(['nyan', 'oh hai mark'], {
+        fontFamily: 'Helvetica, Arial, sans-serif',
+        fontWeight: 'bold',
+        fontSize: '2em',
+      });
+
+      console.log('measure for "nyan":', measures[0]);
+      console.log('measure for "oh hai mark":', measures[1]);
+    </script>
+
+    <!-- Example 2: Wrap text -->
+    <script type="module">
+      import { layoutText } from 'https://unpkg.com/@josephuspaye/svg-text';
+
+      const lines = layoutText(
+        "The tired teacher told Tom to take thirty-three tables to the townhall. Despite drowsiness, Dorothy dove deep down the dark and dank drain to dig out Dave's damaged diary.",
+        { maxWidth: 100, maxLines: 2 },
+        {
+          fontFamily: 'Helvetica, Arial, sans-serif',
+          fontWeight: 'bold',
+          fontSize: '2em',
+        }
+      );
+
+      console.log(lines);
+    </script>
+  </body>
+</html>
