@@ -10,7 +10,7 @@ This project is part of [#CreateWeekly](https://twitter.com/JosephusPaye/status/
 npm install -g @josephuspaye/svg-text
 ```
 
-## Examples
+## Usage
 
 ### Measure text
 
